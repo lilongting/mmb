@@ -1,0 +1,53 @@
+@charset "UTF-8";
+body {
+  font-family: "Microsoft YaHei";
+  background: #f1f1f1;
+}
+/*导航开始*/
+.mmb_nav{
+  margin-top: 10px;
+  padding-bottom: 5px;
+  background-color: #fff;
+}
+.mmb_nav>.nav_row{
+  padding: 10px 0;
+}
+.mmb_nav>.nav_row>li{
+  width: 25%;
+  float: left;
+  margin-top: 15px;
+  overflow: hidden;
+  text-align: center;
+}
+.mmb_nav>.nav_row a{
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.mmb_nav>.nav_row img{
+  width: 50px;
+}
+.mmb_nav>.nav_row p{
+  text-align: center;
+  margin-top: 5px;
+  font-size: 12px;
+}
+/*导航结束*/
+/*list_title开始*/
+.list_title .list-title-content{
+  height: 35px;
+  line-height: 35px;
+  color: #fff;
+  background-color: #ff9000;
+  padding-left: 10px;
+  font-size: 16px;
+}
+.list_title .list-title-content>span:last-child{
+  width: 20px;
+  height: 20px;
+  line-height: 35px;
+  float: right;
+  margin-right: 20px;
+  font-size: 25px;
+}
+/*list_title结束*/

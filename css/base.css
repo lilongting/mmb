@@ -1,0 +1,160 @@
+@charset "utf-8";
+/* CSS Document */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+input,
+select,
+form images,
+button {
+  vertical-align: middle;
+  -webkit-tap-highlight-color: transparent;
+  outline: 0;
+}
+
+.clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+.clearfix {
+  zoom: 1;
+}
+
+textarea {
+  width: 95%;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+em,
+i {
+  font-style: normal;
+}
+
+img {
+  border: none;
+}
+
+input,
+img {
+  vertical-align: middle;
+}
+
+body {
+  color: #000;
+  font-family: arial;
+  background: #FFF;
+  overflow-x: hidden;
+}
+
+/*头部开始*/
+.container {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  max-width: 960px;
+  min-width: 320px;
+}
+
+.mmb_header {
+  background-color: #ff841d;
+  height: 50px;
+  position: relative;
+}
+
+.mmb_header .logo {
+  padding: 12px;
+  width: 75%;
+  float: left;
+  margin-left: 5px;
+}
+
+.mmb_header .logo img {
+  max-height: 25px;
+  overflow: hidden;
+}
+
+.mmb_header .app {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  padding: 7px;
+}
+
+.mmb_header .app img {
+  max-height: 34px;
+  overflow: hidden;
+}
+/*搜索*/
+.mmb_search {
+  padding: 10px;
+  padding-right:80px;
+  background-color: #fff;
+  position: relative;
+}
+
+.mmb_search input[type='text'] {
+  background-color: #f1f1f1;
+  padding-right: 50px;
+  padding-left: 20px;
+  border: none;
+  border-radius: 15px;
+  font-size: 13px;
+  height: 30px;
+  line-height: 30px;
+  width: 100%;
+}
+.mmb_search button{
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  border: none;
+  border-radius: 15px;
+  font-size: 16px;
+  height: 30px;
+  width: 60px;
+  line-height: 30px;
+  background-color: #ff841d;
+  color: #fff;
+}
