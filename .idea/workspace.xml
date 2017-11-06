@@ -2,6 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ca22cf51-14df-41a8-bc05-85a32a5cd79f" name="默认的" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bijia.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/bijia.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/productlist.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/bijia.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/productlist.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/productlist.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/category.html" afterPath="$PROJECT_DIR$/category.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/common.js" afterPath="$PROJECT_DIR$/js/common.js" />
@@ -284,15 +291,15 @@
       <workItem from="1509865367008" duration="3600000" />
       <workItem from="1509869678975" duration="20742000" />
       <workItem from="1509926562488" duration="641000" />
-      <workItem from="1509928085604" duration="41222000" />
+      <workItem from="1509928085604" duration="41268000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="66205000" />
+    <option name="totallyTimeSpent" value="66251000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="680" y="61" width="1355" height="848" extended-state="0" />
+    <frame x="680" y="61" width="1355" height="848" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19755912" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
