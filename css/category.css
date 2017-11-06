@@ -1,0 +1,36 @@
+@charset "UTF-8";
+#category .rows {
+  background-color: #ededed;
+  font-size: 14px;
+  color: #666;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+#category .category_title_a {
+  height: 40px;
+  line-height: 40px;
+  font-size: 16px;
+  display: block;
+  padding-left: 15px;
+  font-weight: bold;
+  border-bottom: 1px solid #ccc;
+}
+
+#category .category_title .category_content {
+  background-color: #f9f9f9;
+}
+
+#category .category_content li {
+  border-right: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  width: 33.33%;
+  float: left;
+  text-align: center;
+  height: 40px;
+  line-height: 40px;
+}
+#category .category_content a {
+  width: 100%;
+  display: block;
+}

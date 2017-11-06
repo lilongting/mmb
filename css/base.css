@@ -126,6 +126,9 @@ body {
   max-height: 34px;
   overflow: hidden;
 }
+.hide{
+  display: none!important;
+}
 /*搜索*/
 .mmb_search {
   padding: 10px;
@@ -158,3 +161,35 @@ body {
   background-color: #ff841d;
   color: #fff;
 }
+/*mmb_foot开始*/
+.foot_top {
+  border-top: 1px solid #c4c4c4;
+  border-bottom: 1px solid #c4c4c4;
+  height: 34px;
+  line-height: 34px;
+  margin-top: 25px;
+}
+
+.foot_top a {
+  float: left;
+  box-sizing: border-box;
+  font-size: 14px;
+  width: 30%;
+  text-align: center;
+  border-right: 1px solid #c4c4c4;
+}
+
+.foot_top a:last-child {
+  width: 40%;
+  border: none;
+}
+
+.footer {
+  background-color: #efefef;
+  font-size: 12px;
+  text-align: center;
+  color: #666;
+  padding: 15px 0;
+}
+
+/*mmb_foot结束*/

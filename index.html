@@ -21,80 +21,97 @@
       </a>
     </div>
   </div>
+
   <div class="mmb_search">
     <input type="text" placeholder="请输入你想比价的商品">
     <button>搜索</button>
   </div>
+
   <div class="mmb_nav">
     <ul class="nav_row clearfix">
-      <li>
-        <a href="#">
-          <img src="images/ic_search.png" alt="比价搜索">
-          <p>比价搜索</p>
-        </a>
-      </li>
-      <li>
-        <a href="#">
-          <img src="images/ic_cu.png" alt="省钱控">
-          <p>省钱控</p>
-        </a>
-      </li>
-      <li>
-        <a href="#">
-          <img src="images/ic_coudanpin.png" alt="国内折扣">
-          <p>国内折扣</p>
-        </a>
-      </li>
-      <li>
-        <a href="#">
-          <img src="images/ic_bcj.png" alt="白菜价">
-          <p>白菜价</p>
-        </a>
-      </li>
-      <li>
-        <a href="#">
-          <img src="images/haitao.png" alt="海淘折扣">
-          <p>海淘折扣</p>
-        </a>
-      </li>
-      <li>
-        <a href="#">
-          <img src="images/ic_temai.png" alt="优惠券">
-          <p>优惠券</p>
-        </a>
-      </li>
-      <li>
-        <a href="#">
-          <img src="images/ic_trend.png" alt="查历史价">
-          <p>查历史价</p>
-        </a>
-      </li>
-      <li>
-        <a href="#">
-          <img src="images/gengduo.png" alt="更多">
-          <p>更多</p>
-        </a>
-      </li>
+      <!--留神-->
     </ul>
   </div>
+
   <div class="list_title">
     <div class="list-title-content ">
       <span>超值折扣推荐</span>
       <span class="fa fa-chevron-circle-right"></span>
     </div>
   </div>
+
   <div class="mmb_product">
     <div class="mmb_product_list">
       <ul>
-        <li>
-          <a href="#">
-            
-          </a>
-        </li>
+        <!--填补tpl-->
       </ul>
     </div>
+    <div class="more">
+      <a href="#">更多优惠信息 »</a>
+    </div>
   </div>
-  <div class="mmb_foot"></div>
+
+  <div class="mmb_brandrank">
+    <div class="list-title-content">
+      <span>品牌排行</span>
+      <span class="fa fa-chevron-circle-right"></span>
+    </div>
+  </div>
+
+  <div class="mmb_foot">
+    <div class="foot_top">
+      <a href="javascript:;">登录</a>
+      <a href="javascript:;">注册</a>
+      <a href="#">
+        <span class="fa fa-arrow-up"></span>
+        返回顶部
+      </a>
+    </div>
+    <div class="footer">
+      <p>
+        <a href="javascript:;" style="color:red;">手机APP下载</a>
+        <a href="#">慢慢买手机版</a>
+        -- 掌上比价平台
+      </p>
+      <p>m.manmanbuy.com</p>
+    </div>
+  </div>
 </div>
+<script type="text/html" id="tpl">
+  {{each result v i}}
+  <li class="clearfix">
+    <a href="#">
+      <div class="pic">
+        {{#v.productImgSm}}
+        <!--<img src="images/htjy.jpg" alt="移动端凑单品：海天 鲜味 生抽 1.28L">-->
+      </div>
+      <div class="info clearfix">
+        <div class="title">{{v.productName}}
+          <span>{{v.productPinkage}}</span>
+        </div>
+        <div class="other">
+          <span class="other_l">{{v.productFrom}} | {{v.productTime}}</span>
+          <span class="other_r"><i class="fa fa-commenting-o"></i>{{v.productComCount.replace("有","").replace("人评论","")}}</span>
+        </div>
+      </div>
+    </a>
+  </li>
+  {{/each}}
+</script>
+<script type="text/html" id="tpl2">
+  {{each result v i}}
+  <li>
+    <a href="{{v.titlehref}}">
+      <!--<img src="images/ic_search.png" alt="比价搜索">-->
+      {{#v.img}}
+      <p>{{v.name}}</p>
+    </a>
+  </li>
+  {{/each}}
+</script>
+<script src="lib/artTemplate/template-web.js"></script>
+<script src="lib/jquery/jquery.min.js"></script>
+<script src="js/common.js"></script>
+<script src="js/index.js"></script>
 </body>
 </html>
