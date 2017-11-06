@@ -1,0 +1,158 @@
+@charset "UTF-8";
+#mmb_bijia {
+  margin-top: 1px;
+}
+
+#mmb_bijia .bijia_title {
+  height: 38px;
+  line-height: 36px;
+  font-size: 14px;
+  padding-left: 8px;
+  border-top: 1px solid #ebebeb;
+  border-bottom: 1px solid #ccc;
+  background: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#ebebeb));
+}
+
+.bijia_title .slect {
+  float: right;
+  margin-right: 8px;
+  display: block;
+  height: 28px;
+  line-height: 28px;
+  text-align: center;
+  font-size: 14px;
+  padding: 0 15px;
+  margin-top: 4px;
+  border-radius: 5px;
+  background: -webkit-gradient(linear, 0 0, 0 100%, from(#d7d7d7), to(#f5f5f5));
+  box-shadow: 0 1px 2px #888;
+}
+
+.bijia_product {
+  position: relative;
+}
+
+.bijia_product .product_name {
+  height: 200px;
+  width: 90%;
+  font-size: 17px;
+  text-align: center;
+  margin: 16px auto 0;
+}
+
+.bijia_product .product_img {
+  display: block;
+  height: 170px;
+  width: 170px;
+  margin: 0 auto;
+}
+
+.bijia_product .product_collect {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  margin-right: 24px;
+
+}
+#mmb_bijia .tab{
+  width: 100%;margin-top: 20px;
+  height: 34px;
+  line-height: 34px;
+  font-size: 15px;
+  overflow: hidden;
+  background: -webkit-gradient(linear, 0 0, 0 100%, from(#ffd050), to(#ffbb00));
+  border-top: solid 1px #c14d00;
+  border-bottom: 1px solid #c14d00;
+}
+.tab ul{
+  width: 100%;
+}
+.tab ul li{
+  float: left;
+  width: 33.33%;
+  height: 34px;
+  text-align: center;
+  box-sizing: border-box;
+}
+.tab .cur{
+  background: -webkit-gradient(linear, 0 0, 0 100%, from(#ffa632), to(#ff9000));
+}
+.tab .mtab{
+  border-left: solid 1px #c14d00;
+  border-right: solid 1px #c14d00;
+}
+.tab li a {
+  color: #fff;
+  display: block;
+  height: 34px;
+  width: 100%;
+}
+.list table{
+  margin-top: 10px;
+}
+.list .tab2 {
+  font-size: 14px;
+  color: #888;
+  border-bottom: 1px solid #bbb;
+}
+.list td{
+  line-height: 22px;
+}
+.list .p_pic{
+  text-align: center;
+  border-bottom: 1px solid #bbb;
+}
+.list .red{
+  color: #d10311;
+  text-align: right;
+  padding-right: 15px;
+}
+.list .tab2{
+  font-size: 14px;
+  color: #888;
+  border-bottom: 1px solid #bbb;
+}
+.tab2 td {
+  padding-bottom: 8px;
+}
+.tab2 .r {
+  text-align: right;
+  padding-right: 15px;
+}
+.list .note{
+  font-size: 12px;
+  color: #888;
+  padding: 8px 10px;
+  line-height: 18px;
+}
+.bijia_pro_title{
+  border-top: 4px solid #7a7a7a;
+  margin-top: 5px;
+}
+.bijia_pro_title>div{
+  height: 34px;
+  line-height: 34px;
+  text-align: center;
+  background: #dbdbdb;
+  font-size: 14px;
+  border-top: 1px solid #fff;
+}
+
+
+.bijia_com_list .more{
+  padding: 0 8px;
+  margin-top: 16px;
+}
+.bijia_com_list .more .more_a{
+  display: block;
+  height: 32px;
+  background-color: #d4d4d4;
+  background: -webkit-gradient(linear, 0 0, 0 100%, from(#f1f1f1), to(#d4d4d4));
+  border-bottom: 1px solid #bababa;
+  box-shadow: 0 0 1px #666;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 14px;
+  line-height: 32px;
+  overflow: hidden;
+}

@@ -1,0 +1,105 @@
+@charset "UTF-8";
+body {
+  background: #f1f1f1;
+}
+
+#mmb_product {
+  margin-top: 1px;
+}
+
+#mmb_product .product_title {
+  height: 38px;
+  line-height: 36px;
+  font-size: 14px;
+  padding-left: 8px;
+  border-top: 1px solid #ebebeb;
+  border-bottom: 1px solid #ccc;
+  background: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#ebebeb));
+}
+
+.product_title .slect {
+  float: right;
+  margin-right: 8px;
+  display: block;
+  height: 28px;
+  line-height: 28px;
+  text-align: center;
+  font-size: 14px;
+  padding: 0 15px;
+  margin-top: 4px;
+  border-radius: 5px;
+  background: -webkit-gradient(linear, 0 0, 0 100%, from(#d7d7d7), to(#f5f5f5));
+  box-shadow:0 1px 2px #888;
+}
+.product_list{
+  background-color: #fff;
+}
+.product_list li{
+  border-bottom: 1px solid #e7e7e7;
+  padding: 10px;
+}
+.product_list li a{
+  display: block;
+}
+.product_list .pic{
+  float: left;
+  width: 110px;
+}
+.product_list .pic img{
+  width: 100px;
+  height: 100px;
+}
+.product_list .info{
+padding-left: 100px;
+  font-size: 14px;
+  line-height: 25px;
+}
+.product_list .info_til{
+  color: #333;
+  line-height: 24px;
+  min-height: 44px;
+  word-break: break-all;
+}
+.product_list .price{
+  height: 25px;
+  margin-top: 5px;
+  font-size: 18px;
+  color: #ea3900;
+}
+.product_list .other{
+  font-size: 12px;
+  color: #a1a1a1;
+}
+.product_list .other span{
+  margin-right: 10px;
+}
+.product_list .page{
+  margin-top: 10px;
+  text-align: center;
+}
+.product_list .page span{
+  width: 33.33%;
+  float: left;
+}
+.page span a{
+  box-sizing: border-box;
+  background: -webkit-gradient(linear, 0 0, 0 100%, from(#f1f1f1), to(#d4d4d4));
+  border-bottom: 1px solid #bababa;
+  box-shadow: 0 0 1px #666;
+  border-radius: 5px;
+  font-size: 14px;
+  line-height: 32px;
+  padding: 8px 20px;
+}
+.page span select{
+  border: 1px solid #bababa;
+  font-size: 16px;
+  padding: 8px 15px;
+  height: 36px;
+}
+.bijia_product .product_name{
+  display: block;
+  width: 170px;
+  height: 170px;
+  margin: 0 auto;
+}

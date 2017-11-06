@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta charset="UTF-8">
+  <title>productlist</title>
+  <link rel="stylesheet" href="lib/fa/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/bijia.css">
+</head>
+<body>
+<div class="container">
+  <div class="mmb_header">
+    <div class="logo">
+      <a href="index.html"><img src="images/header_logo.png" alt=""></a>
+    </div>
+    <div class="app">
+      <a href="javascript:;" title="手机app下载">
+        <img src="images/header_app.png" alt="手机app下载">
+      </a>
+    </div>
+  </div>
+  <div class="mmb_search">
+    <input type="text" placeholder="请输入你想比价的商品">
+    <button>搜索</button>
+  </div>
+  <div id="mmb_bijia">
+    <nav class="bijia_title">
+      <a href="index.html">首页</a>
+      &gt;
+      <a href="#">电视</a>
+      &gt;
+      <a href="#">乐视TV(Letv)S50</a>
+      &gt;
+      <a href="#" class="slect"> 筛选</a>
+    </nav>
+    <div class="xuanran">
+      <!--<div class="bijia_product">-->
+      <!--<div class="product_name">乐视TV(Letv)S50 Air全配版2D 50英寸 全高清LED液晶电视</div>-->
+      <!--<div class="product_img">-->
+      <!--<img src="images/htjy.jpg" alt="" width="170">-->
+      <!--</div>-->
+      <!--<div class="product_collect">-->
+      <!--<a href="javascript:;">-->
+      <!--<img src="images/ic_cu.png" alt="" width="39" height="39">-->
+      <!--</a>-->
+      <!--</div>-->
+      <!--</div>-->
+      <!--<div class="tab">-->
+      <!--<ul>-->
+      <!--<li class="cur"><a href="#">比价购买</a></li>-->
+      <!--<li class="mtab"><a href="#">产品参数</a></li>-->
+      <!--<li><a href="#">评价(2322)</a></li>-->
+      <!--</ul>-->
+      <!--</div>-->
+      <!--<div class="list">-->
+      <!--<a href="redirect.aspx?webid=1&bjid=76069915&tourl=http://item.jd.com/1162187.html&y=bijia" target="_blank" onlick="trackLog('商品购买','比价页面');">-->
+      <!--<table></table>-->
+      <!--</a>-->
+      <!--<div class="note">-->
+      <!--* 实际价格以各网站列出的实时售价为准，我们提供的价格可能有数小时至数日的延迟。-->
+      <!--</div>-->
+      <!--</div>-->
+    </div>
+    <div class="bijia_pro_title">
+      <div>网友评价</div>
+    </div>
+    <div class="bijia_com_list">
+      <ul></ul>
+      <div class="more"><a class="more_a" href="javascript:;">查看更多评价</a></div>
+    </div>
+  </div>
+  <div class="mmb_foot">
+    <div class="foot_top">
+      <a href="javascript:;">登录</a>
+      <a href="javascript:;">注册</a>
+      <a href="#">
+        <span class="fa fa-arrow-up"></span>
+        返回顶部
+      </a>
+    </div>
+    <div class="footer">
+      <p>
+        <a href="javascript:;" style="color:red;">手机APP下载</a>
+        <a href="#">慢慢买手机版</a>
+        -- 掌上比价平台
+      </p>
+      <p>m.manmanbuy.com</p>
+    </div>
+  </div>
+
+  <script type="text/html" id="tpl">
+    {{each result v i}}
+    <div class="bijia_product">
+      <div class="product_name">{{v.productName}}</div>
+      <div class="product_img">
+        {{@v.productImg}}
+      </div>
+      <div class="product_collect">
+        <a href="javascript:;">
+          <img src="images/ic_cu.png" alt="" width="39" height="39">
+        </a>
+      </div>
+    </div>
+    <div class="tab">
+      <ul>
+        <li class="cur"><a href="#">比价购买</a></li>
+        <li class="mtab"><a href="#">产品参数</a></li>
+        <li><a href="#">评价(2322)</a></li>
+      </ul>
+    </div>
+    <div class="list">
+      <a href="redirect.aspx?webid=1&bjid=76069915&tourl=http://item.jd.com/1162187.html&y=bijia" target="_blank" onlick="trackLog('商品购买','比价页面');">
+        {{@v.bjShop}}
+      </a>
+      <div class="note">
+        * 实际价格以各网站列出的实时售价为准，我们提供的价格可能有数小时至数日的延迟。
+      </div>
+    </div>
+    {{/each}}
+  </script>
+
+  <script src="lib/artTemplate/template-web.js"></script>
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="js/common.js"></script>
+  <script src="js/bijia.js"></script>
+</div>
+</body>
+</html>
