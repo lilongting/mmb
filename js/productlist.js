@@ -3,6 +3,7 @@
  */
 $(function () {
   var id = Route.getParam("categoryid");
+  var page = Route.getParam("pageid");
   // console.log(id);
   //渲染面包屑导航
   $.ajax({
@@ -18,8 +19,8 @@ $(function () {
     }
   });
   //渲染商品列表
-  var page = 1;
   var maxPage = 3;
+  var href =Route.baseUrl+"/getproductlist";
   function render() {
     $.ajax({
       type: "get",
@@ -32,6 +33,7 @@ $(function () {
       success: function (data) {
         console.log(data);
         $(".product_list>ul").html(template("tpl2", data));
+        // $(".product_list>.page").html(template("tpl3", data));
       }
     });
   }

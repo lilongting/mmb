@@ -67,7 +67,7 @@
       <div>网友评价</div>
     </div>
     <div class="bijia_com_list">
-      <ul></ul>
+      <!--留神-->
       <div class="more"><a class="more_a" href="javascript:;">查看更多评价</a></div>
     </div>
   </div>
@@ -111,7 +111,8 @@
       </ul>
     </div>
     <div class="list">
-      <a href="redirect.aspx?webid=1&bjid=76069915&tourl=http://item.jd.com/1162187.html&y=bijia" target="_blank" onlick="trackLog('商品购买','比价页面');">
+      <a href="redirect.aspx?webid=1&bjid=76069915&tourl=http://item.jd.com/1162187.html&y=bijia" target="_blank"
+         onlick="trackLog('商品购买','比价页面');">
         {{@v.bjShop}}
       </a>
       <div class="note">
@@ -120,7 +121,22 @@
     </div>
     {{/each}}
   </script>
-
+  <script type="text/html" id="tpl2">
+    {{each result v i}}
+    <ul>
+      <li>
+        <div class="clearfix">
+          <span class="com_name">{{v.comName}}</span>
+          <span class="com_time">{{v.comTime}}</span>
+        </div>
+        <div class="clearfix"><span class="com_from">{{v.comFrom}}</span></div>
+        <div class="com_content">
+          {{v.comContent}}
+        </div>
+      </li>
+    </ul>
+    {{/each}}
+  </script>
   <script src="lib/artTemplate/template-web.js"></script>
   <script src="lib/jquery/jquery.min.js"></script>
   <script src="js/common.js"></script>

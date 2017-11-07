@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <title>moneyproduct</title>
+  <link rel="stylesheet" href="lib/fa/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/inlanddiscount.css">
+</head>
+<body>
+<div class="container">
+  <div class="mmb_header">
+    <div class="back">
+      <a href="index.html" class="fa fa-angle-left"></a>
+    </div>
+    <h1>国内折扣</h1>
+    <div class="app">
+      <a href="javascript:;" title="手机app下载">
+        <img src="images/header_app.png" alt="手机app下载">
+      </a>
+    </div>
+  </div>
+
+  <div id="main">
+    <ul >
+      <!--坑-->
+    </ul>
+  </div>
+
+  <div class="mmb_foot">
+    <div class="foot_top">
+      <a href="javascript:;">登录</a>
+      <a href="javascript:;">注册</a>
+      <a href="#">
+        <span class="fa fa-arrow-up"></span>
+        返回顶部
+      </a>
+    </div>
+    <div class="footer">
+      <p>
+        <a href="javascript:;" style="color:red;">手机APP下载</a>
+        <a href="#">慢慢买手机版</a>
+        -- 掌上比价平台
+      </p>
+      <p>m.manmanbuy.com</p>
+    </div>
+  </div>
+</div>
+<script type="text/html" id="tpl">
+  {{each result v i}}
+  <li class="pro_list">
+    <a href="discount.html?productid={{v.productId}}" title="">
+      <div class="img">
+        <!--<img src="images/htjy.jpg" alt="">-->
+        {{@v.productImg}}
+      </div>
+      <div class="title">{{v.productName}}</div>
+      <div class="subit">{{v.productPrice}}</div>
+      <div class="info">
+        <div class="jd">{{v.productFrom}}| {{v.productTime}}</div>
+      </div>
+    </a>
+  </li>
+  {{/each }}
+</script>
+<script src="lib/artTemplate/template-web.js"></script>
+<script src="lib/jquery/jquery.min.js"></script>
+<script src="js/common.js"></script>
+<script src="js/inlanddiscount.js"></script>
+</body>
+</html>

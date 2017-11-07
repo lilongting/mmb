@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <title>moneyproduct</title>
+  <link rel="stylesheet" href="lib/fa/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/moneyproduct.css">
+</head>
+<body>
+<div class="container">
+  <div class="mmb_header">
+    <div class="back">
+      <a href="moneyctrl.html" class="fa fa-angle-left"></a>
+    </div>
+    <h1>国内折扣</h1>
+    <div class="app">
+      <a href="javascript:;" title="手机app下载">
+        <img src="images/header_app.png" alt="手机app下载">
+      </a>
+    </div>
+  </div>
+  <div id="main">
+    <div class="content">
+      <div class="cu_content">
+        <!--坑1-->
+      </div>
+      <div class="man_content">
+        <img src="images/mmbweixin2.png" alt="">
+      </div>
+      <div class="pl_content">
+
+        <!--坑2-->
+      </div>
+    </div>
+  </div>
+  <div class="mmb_foot">
+    <div class="foot_top">
+      <a href="javascript:;">登录</a>
+      <a href="javascript:;">注册</a>
+      <a href="#">
+        <span class="fa fa-arrow-up"></span>
+        返回顶部
+      </a>
+    </div>
+    <div class="footer">
+      <p>
+        <a href="javascript:;" style="color:red;">手机APP下载</a>
+        <a href="#">慢慢买手机版</a>
+        -- 掌上比价平台
+      </p>
+      <p>m.manmanbuy.com</p>
+    </div>
+  </div>
+</div>
+<script type="text/html" id="tpl">
+  {{each result v i}}
+  <h3>{{v.productName}}</h3>
+  <div class="info">
+    <span class="jd">{{v.productFrom}}</span>
+    <span class="time">{{v.productTime}}</span>
+    <span class="author">{{v.productTips}}</span>
+  </div>
+  <div class="cc clearfix">
+    <div class="pic">
+      <!--<img src="images/htjy.jpg" alt="">-->
+      {{@v.productImgSm}}
+    </div>
+    <div class="cc_con">
+      <p>{{v.productInfo2}}</p>
+      <p>{{v.productInfo1}}</p>
+      <p>
+        <!--<img src="images/htjy.jpg" alt="">-->
+        {{@v.productImgLg}}
+      </p>
+    </div>
+  </div>
+  <div class="center_pic">
+    <!--<%- v.productCity %>-->
+    {{@v.productCity}}
+  </div>
+  <div class="go_buy"><a href="#" target="_blank">前往购买</a></div>
+  {{/each}}
+</script>
+<script type="text/html" id="tpl2">
+  {{each result v i}}
+  {{@v.productComment}}
+  {{/each}}
+</script>
+<script src="lib/artTemplate/template-web.js"></script>
+<script src="lib/jquery/jquery.min.js"></script>
+<script src="js/common.js"></script>
+<script src="js/moneyproduct.js"></script>
+</body>
+</html>

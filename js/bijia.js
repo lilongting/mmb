@@ -4,7 +4,6 @@
 $(function () {
   var id = Route.getParam("productid");
   // console.log(id);
-  //渲染面包屑导航
   $.ajax({
     type: "get",
     url: Route.baseUrl + "/getproduct",
@@ -17,5 +16,17 @@ $(function () {
       $(".xuanran").html(template("tpl", data));
     }
   });
+  $.ajax({
+    type: "get",
+    url: Route.baseUrl + "/getproductcom",
+    data:{
+      productid: id
+    },
+    dataType: "json",
+    success: function (data) {
+      // console.log(data);
+      $(".bijia_com_list").html(template("tpl2", data));
+    }
+  })
   
 })

@@ -54,8 +54,10 @@
   margin-right: 24px;
 
 }
-#mmb_bijia .tab{
-  width: 100%;margin-top: 20px;
+
+#mmb_bijia .tab {
+  width: 100%;
+  margin-top: 20px;
   height: 34px;
   line-height: 34px;
   font-size: 15px;
@@ -64,72 +66,88 @@
   border-top: solid 1px #c14d00;
   border-bottom: 1px solid #c14d00;
 }
-.tab ul{
+
+.tab ul {
   width: 100%;
 }
-.tab ul li{
+
+.tab ul li {
   float: left;
   width: 33.33%;
   height: 34px;
   text-align: center;
   box-sizing: border-box;
 }
-.tab .cur{
+
+.tab .cur {
   background: -webkit-gradient(linear, 0 0, 0 100%, from(#ffa632), to(#ff9000));
 }
-.tab .mtab{
+
+.tab .mtab {
   border-left: solid 1px #c14d00;
   border-right: solid 1px #c14d00;
 }
+
 .tab li a {
   color: #fff;
   display: block;
   height: 34px;
   width: 100%;
 }
-.list table{
+
+.list table {
   margin-top: 10px;
 }
+
 .list .tab2 {
   font-size: 14px;
   color: #888;
   border-bottom: 1px solid #bbb;
 }
-.list td{
+
+.list td {
   line-height: 22px;
 }
-.list .p_pic{
+
+.list .p_pic {
   text-align: center;
   border-bottom: 1px solid #bbb;
 }
-.list .red{
+
+.list .red {
   color: #d10311;
   text-align: right;
   padding-right: 15px;
 }
-.list .tab2{
+
+.list .tab2 {
   font-size: 14px;
   color: #888;
   border-bottom: 1px solid #bbb;
 }
+
 .tab2 td {
   padding-bottom: 8px;
 }
+
 .tab2 .r {
   text-align: right;
   padding-right: 15px;
 }
-.list .note{
+
+.list .note {
   font-size: 12px;
   color: #888;
   padding: 8px 10px;
   line-height: 18px;
 }
-.bijia_pro_title{
+
+.bijia_pro_title {
   border-top: 4px solid #7a7a7a;
   margin-top: 5px;
 }
-.bijia_pro_title>div{
+
+.bijia_pro_title > div {
   height: 34px;
   line-height: 34px;
   text-align: center;
@@ -138,12 +156,36 @@
   border-top: 1px solid #fff;
 }
 
+.bijia_com_list ul > li {
+  font-size: 12px;
+  color: #666;
+  padding: 10px 10px 0;
+  margin-top: 5px;
+  border-bottom: 1px solid #ccc;
+  line-height: 20px;
+}
 
-.bijia_com_list .more{
+.bijia_com_list .com_name {
+  float: left;
+}
+
+.bijia_com_list .com_time,
+.bijia_com_list .com_from {
+  float: right;
+}
+
+.bijia_com_list .com_content{
+  color: #000;
+  line-height: 15px;
+  margin-top: 5px;
+}
+
+.bijia_com_list .more {
   padding: 0 8px;
   margin-top: 16px;
 }
-.bijia_com_list .more .more_a{
+
+.bijia_com_list .more .more_a {
   display: block;
   height: 32px;
   background-color: #d4d4d4;
