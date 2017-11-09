@@ -28,7 +28,7 @@
   <div id="category">
     <div class="rows">
       <ul class="category_title">
-        <!--一个坑-->
+        <!--坑1-->
       </ul>
     </div>
   </div>
@@ -55,7 +55,7 @@
     <li>
       <a class="category_title_a" href="javascript:;" data-id="{{v.titleId}}">{{v.title}}</a>
       <ul class="category_content hide clearfix">
-
+        <!--2-->
       </ul>
     </li>
     {{/each}}
@@ -63,7 +63,7 @@
   <script type="text/html" id="tpl2">
     {{each result v i}}
       <li>
-        <a href="productlist.html?categoryid={{v.categoryId}}&category={{v.category}}&pageid=1" data-category-id="{{v.categoryId}}">
+        <a href="productlist.html?categoryid={{v.categoryId}}&category={{v.category}}&pageid=1&titleId={{v.titleId}}" data-category-id="{{v.categoryId}}">
           {{v.category}}
         </a>
       </li>

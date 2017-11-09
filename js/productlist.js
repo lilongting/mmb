@@ -4,6 +4,8 @@
 $(function () {
   var id = Route.getParam("categoryid");
   var page = Route.getParam("pageid");
+  var category = Route.getParam("category");
+  var categoryid = Route.getParam("categoryid");
   // console.log(id);
   //渲染面包屑导航
   $.ajax({
@@ -19,8 +21,7 @@ $(function () {
     }
   });
   //渲染商品列表
-  var maxPage = 3;
-  var href =Route.baseUrl+"/getproductlist";
+
   function render() {
     $.ajax({
       type: "get",
@@ -31,27 +32,35 @@ $(function () {
       },
       dataType: "json",
       success: function (data) {
-        console.log(data);
+        data.categoryid =categoryid;
         $(".product_list>ul").html(template("tpl2", data));
-        // $(".product_list>.page").html(template("tpl3", data));
+        var maxPage = Math.ceil(data.totalCount / data.pagesize);
+        data.maxPage = maxPage;
+        data.page = page;
+        console.log(data);
+        $("#selectPage").html(template("tpl3", data));
+        $(".page .next").on("click", function () {
+          page++;
+          if (page > data.maxPage) {
+            page = data.maxPage;
+          }
+          location.href = "http://www.mmb.com/productlist.html?categoryid=" + id + "&category=" + category + "&pageid=" + page;
+        })
       }
     });
   }
 
   render();
 
-  $(".page .prev").on("click", function () {
+  $("#prev").on("click", function () {
     page--;
-    if (page <= 1) {
-      page = 1;
+    if (page < 1) {
+      page = 1
     }
-    render();
+    location.href = "http://www.mmb.com/productlist.html?categoryid=" + id + "&category=" + category + "&pageid=" + page;
   });
-  $(".page .next").on("click", function () {
-    page++;
-    if (page > maxPage) {
-      page = maxPage;
-    }
-    render();
+  $("#selectPage").on("change", function () {
+    var value = $(this).val();
+    location.href = "http://www.mmb.com/productlist.html?categoryid=" + id + "&category=" + category + "&pageid=" + value;
   })
 });

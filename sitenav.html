@@ -4,10 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport"
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-  <title>inlanddiscount</title>
+  <title>sitenav</title>
   <link rel="stylesheet" href="lib/fa/css/font-awesome.min.css">
   <link rel="stylesheet" href="css/base.css">
-  <link rel="stylesheet" href="css/inlanddiscount.css">
+  <link rel="stylesheet" href="css/sitenav.css">
 </head>
 <body>
 <div class="container">
@@ -15,7 +15,7 @@
     <div class="back">
       <a href="index.html" class="fa fa-angle-left"></a>
     </div>
-    <h1>国内折扣</h1>
+    <h1>商场导航</h1>
     <div class="app">
       <a href="javascript:;" title="手机app下载">
         <img src="images/header_app.png" alt="手机app下载">
@@ -23,10 +23,14 @@
     </div>
   </div>
 
-  <div id="main">
-    <ul >
-      <!--坑-->
-    </ul>
+  <div class="site-nav">
+    <div class="link clearfix">
+      <a href="#" target="_blank">
+        <img src="http://misc.manmanbuy.com/images/hzweb/360.png" alt="">
+        京东商城
+      </a>
+
+    </div>
   </div>
 
   <div class="mmb_foot">
@@ -48,26 +52,20 @@
     </div>
   </div>
 </div>
+
+</div>
+
 <script type="text/html" id="tpl">
   {{each result v i}}
-  <li class="pro_list">
-    <a href="discount.html?productid={{v.productId}}" title="">
-      <div class="img">
-        <!--<img src="images/htjy.jpg" alt="">-->
-        {{@v.productImg}}
-      </div>
-      <div class="title">{{v.productName}}</div>
-      <div class="subit">{{v.productPrice}}</div>
-      <div class="info">
-        <div class="jd">{{v.productFrom}}| {{v.productTime}}</div>
-      </div>
-    </a>
-  </li>
-  {{/each }}
+  <a href="{{v.navHref}}" target="_blank">
+    <img src="{{v.navImg}}" alt="">
+    {{v.navTitle}}
+  </a>
+  {{/each}}
 </script>
 <script src="lib/artTemplate/template-web.js"></script>
 <script src="lib/jquery/jquery.min.js"></script>
 <script src="js/common.js"></script>
-<script src="js/inlanddiscount.js"></script>
+<script src="js/sitenav.js"></script>
 </body>
 </html>

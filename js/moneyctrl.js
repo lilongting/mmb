@@ -2,38 +2,47 @@
  * Created by msi on 2017/11/7.
  */
 $(function () {
-  var id = Route.getParam("pageid") || 1;
+  var pd = Route.getParam("pageid") || 0;
 
   $.ajax({
     type: "get",
     url: Route.baseUrl + "/getmoneyctrl",
     data: {
-      pageid: id
+      pageid: pd
     },
     dataType: "json",
     success: function (data) {
       console.log(data);
       $(".product_list_ul").html(template("tpl", data))
-      $("#selectPage").html(template("tpl2", data))
       var pageCount = Math.ceil(data.totalCount / data.pagesize)
       data.pages = pageCount;
-      data.id = id;
+      data.pd = pd;
+      // var arr = [pd,pageCount];
+      // console.log(arr);
+      // $("#selectPage").html(template("tpl2", {arr:arr}))
+      //注意代码的前后顺序
+      $("#selectPage").html(template("tpl2", data))
+      $(".next").on("click", function () {
+        pd++;
+        if (pd> data.pages) {
+          pd = data.pages;
+        }
+        location.href = "http://www.mmb.com/moneyctrl.html?pageid=" + pd;
+      })
     }
   });
   // var pages = data.pages;
   $(".prev").on("click", function () {
-    id--;
-    if (id < 1) {
-      id = 1;
+    pd--;
+    if (pd < 1) {
+      pd = 1;
     }
-    location.href = "http://www.mmb.com/moneyctrl.html?pageid=" + id;
+    location.href = "http://www.mmb.com/moneyctrl.html?pageid=" + pd;
   });
-  $(".next").on("click", function () {
-    id++;
-    if (id < 1) {
-      id = 1;
-    }
-    location.href = "http://www.mmb.com/moneyctrl.html?pageid=" + id;
+  $("#selectPage").on("change",function () {
+    var val = $(this).val();
+    location.href = "http://www.mmb.com/moneyctrl.html?pageid=" + val;
   })
+
 
 })

@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport"
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-  <title>moneyproduct</title>
+  <title>moneyctrl</title>
   <link rel="stylesheet" href="lib/fa/css/font-awesome.min.css">
   <link rel="stylesheet" href="css/base.css">
   <link rel="stylesheet" href="css/moneyctrl.css">
@@ -60,6 +60,9 @@
   </div>
 
 </div>
+<!--<% for(var i = 1; i <=arr[1]; i++) { %>-->
+<!--<option value="{{i}}" {{i==arr[0]?'selected':''}}>{{i}}/{{arr[1]}}</option>-->
+<!--<% } %>-->
 <script type="text/html" id="tpl">
   {{each result v i}}
   <li class="clearfix">
@@ -82,12 +85,9 @@
   {{/each}}
 </script>
 <script type="text/html" id="tpl2">
-  <% for(var i = 1; i <= pages; i++) { %>
-  <% if(i == +id){ %>
-  <option value="<%=i%>" selected><%=i%>/<%=pages%></option>
-  <%}else{ %>
-  <option value="<%=i%>"><%=i%>/<%=pages%></option>
-  <% } %>
+
+  <% for(var i = 1; i <=pages; i++) { %>
+  <option value="{{i}}" {{i==pd?'selected':''}}>{{i}}/{{pages}}</option>
   <% } %>
 </script>
 <script src="lib/artTemplate/template-web.js"></script>

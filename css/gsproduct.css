@@ -1,0 +1,228 @@
+@charset "UTF-8";
+.container .header {
+  background: #ff841d;
+  color: #FFFFFF;
+  height: 44px;
+  width: 100%;
+  display: -webkit-box !important;
+  position: relative;
+}
+
+.header .app {
+  position: absolute;
+  right: 2px;
+  bottom: 0;
+  padding: 6px;
+}
+
+.header .app img {
+  max-height: 34px;
+  overflow: hidden;
+}
+
+.hide {
+  display: none !important;
+}
+
+.header .back {
+  width: 44px;
+  height: 44px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+
+}
+
+.header .back a {
+  color: #fff;
+  width: 100%;
+  height: 100%;
+  line-height: 44px;
+  text-align: center;
+  font-size: 40px
+}
+
+.header h1 {
+  color: #fff;
+  padding: 0 50px;
+  width: 100%;
+  line-height: 44px;
+  text-align: center;
+  font-size: 20px;
+}
+
+/*分割线*/
+.gs-product .list .hd {
+  position: relative;
+  height: 38px;
+  display: -webkit-box;
+}
+
+.gs-product .list .hd .filter {
+  width: 100%;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-flex: 1;
+  border-bottom: 1px solid #dadada;
+}
+
+.gs-product .list .hd .filter ul {
+  width: 100%;
+}
+
+.gs-product .list .hd .filter ul li {
+  float: left;
+  line-height: 37px;
+  width: 33%;
+  display: -webkit-box;
+  position: relative;
+  -webkit-box-flex: 1;
+  box-sizing: border-box;
+}
+
+.gs-product .list .hd .filter ul li a {
+  display: -webkit-box !important;
+  position: relative;
+  width: 100%;
+  font-size: 16px;
+  text-align: center;
+  -webkit-box-align: center;
+  -webkit-box-pack: center;
+}
+
+element.style {
+}
+
+.gs-product .list .hd .filter ul li i {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  vertical-align: middle;
+  background-image: url("../images/up.svg");
+  background-repeat: no-repeat;
+  color: #ffffff;
+  background-size: 22px 22px;
+  background-position: center center;
+}
+
+.gs-product .list .hd .search {
+  width: 46px;
+  position: relative;
+  border-bottom: 1px solid #dadada;
+  text-align: center;
+  border-left: 1px solid #dadada;
+}
+
+.gs-product .list .hd .search i.icon-search {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background-image: url("../images/search.svg");
+  background-repeat: no-repeat;
+  color: #ffffff;
+  background-size: 22px 22px;
+  background-position: center center;
+}
+
+.gs-product .list .hd .popbox {
+  width: 100%;
+  background-color: #ffffff;
+  position: absolute;
+  left: 0px;
+  top: 38px;
+  box-shadow: 0px 3px 6px #dddddd;
+  display: none;
+}
+
+.gs-product .list .hd .popbox.on {
+  display: block;
+  z-index: 10;
+}
+
+.gs-product .list .hd .popbox ul li {
+  border-bottom: 1px solid #dadada;
+  border-width: 0 0 1px 0;
+  -webkit-border-image: url("../images/dian.gif");
+  position: relative;
+}
+
+.gs-product .list .hd .popbox ul li a {
+  display: block;
+  line-height: 40px;
+  padding: 0px 10px;
+}
+
+.gs-product .list .hd .popbox ul li.on:after {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-image: url("../images/xuanzhong.svg");
+  background-repeat: no-repeat;
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  margin-top: -10px;
+}
+
+.gs-product .list .bd {
+  background-color: #f1f1f1;
+  padding: 6px 0px;
+}
+
+.gs-product .list .bd ul li {
+  float: left;
+  width: 50%;
+}
+
+.gs-product .list .bd a {
+  display: block;
+  margin: 4px;
+  background-color: #ffffff;
+}
+
+.gs-product .list .bd .pic {
+  width: 100%;
+  height: auto;
+  text-align: center;
+  overflow: hidden;
+}
+
+.gs-product .list .bd .pic img {
+  max-width: 100%;
+  height: auto;
+}
+
+.gs-product .list .bd .title {
+  color: #333333;
+  word-break: break-all;
+  padding: 0 6px;
+  height: 14px;
+  overflow: hidden;
+  font-size: 12px;
+  line-height: 14px;
+  font-weight: normal;
+  text-align: left;
+  margin-top: 6px;
+}
+
+.gs-product .list .bd .other {
+  padding: 6px;
+}
+
+.gs-product .list .bd .other .price {
+  float: left;
+  color: #f8601d;
+  font-size: 20px;
+}
+
+.gs-product .list .bd .other .btn {
+  float: right;
+  font-size: 14px;
+  color: #FFFFFF;
+  border-radius: 3px;
+  background-color: #ff9501;
+  padding: 4px 10px;
+  text-decoration: none;
+  display: inline-block;
+}

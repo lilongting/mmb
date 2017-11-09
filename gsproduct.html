@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta charset="UTF-8">
+  <title>gsproduct</title>
+  <link rel="stylesheet" href="lib/fa/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/gsproduct.css">
+</head>
+<body>
+<div class="container">
+  <div class="header">
+    <div class="back">
+      <a href="index.html" class="fa fa-angle-left"></a>
+    </div>
+    <h1>凑单品</h1>
+    <div class="app">
+      <a href="javascript:;" title="手机app下载">
+        <img src="images/header_app.png" alt="手机app下载">
+      </a>
+    </div>
+  </div>
+
+  <div class="gs-product">
+    <div class="list">
+      <div class="hd">
+        <div class="filter">
+          <ul>
+            <li class="on"><a href="javascript:;" data-id="0" class="shop">京东<i></i></a></li>
+
+            <li class="on"><a href="javascript:;" data-id="0" class="area">华北<i></i></a></li>
+
+            <li class="on"><a href="javascript:;" data-id="0" class="price">全部价格<i></i></a></li>
+
+          </ul>
+        </div>
+        <div class="search"><i class="icon-search"></i></div>
+        <!--各种下拉-->
+        <div class="popsort popbox" id="shop">
+          <ul>
+            <li class="">
+              <!--sp-->
+            </li>
+
+          </ul>
+        </div>
+        <div class="popcat popbox" id="area">
+          <ul>
+            <!--ar-->
+          </ul>
+        </div>
+        <div class="popprice popbox" id="price">
+          <ul>
+            <li class="on"><a href="javascript:;">全部价格</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="bd gs-product-list">
+        <ul id="container" class="masonry" style="position: relative; height: 0px;">
+
+          <!--list-->
+
+        </ul>
+        <div class="clearfix"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="mmb_foot">
+    <div class="foot_top">
+      <a href="javascript:;">登录</a>
+      <a href="javascript:;">注册</a>
+      <a href="#">
+        <span class="fa fa-arrow-up"></span>
+        返回顶部
+      </a>
+    </div>
+    <div class="footer">
+      <p>
+        <a href="javascript:;" style="color:red;">手机APP下载</a>
+        <a href="#">慢慢买手机版</a>
+        -- 掌上比价平台
+      </p>
+      <p>m.manmanbuy.com</p>
+    </div>
+  </div>
+</div>
+<script type="text/html" id="sp">
+  {{each result v i}}
+  <li class="" >
+    <a href="javascript:;" data-shopid="{{v.shopId}}">{{v.shopName}}</a>
+  </li>
+  {{/each}}
+</script>
+<script type="text/html" id="ar">
+  {{each result v i}}
+  <li class="" data-areaid="{{v.areaId}}">
+    <a href="javascript:;" data-areaid="{{v.areaId}}">{{v.areaName}}</a>
+  </li>
+  {{/each}}
+</script>
+<script type="text/html" id="list">
+  {{each result v i}}
+  <li>
+    <a href="http://item.m.jd.com/ware/view.action?wareId=1274360" class="item border-img">
+      <div class="pic">
+        <img
+            src="{{v.productImg}}"
+            style="width: 174px; height: 174px;">
+      </div>
+      <div class="title">{{v.productName}}</div>
+      <div class="other">
+        <div class="price">{{v.productPrice}}</div>
+        <div class="btn">去凑单</div>
+        <div class="clearfix"></div>
+      </div>
+    </a>
+  </li>
+  {{/each}}
+</script>
+<script src="lib/artTemplate/template-web.js"></script>
+<script src="lib/jquery/jquery.min.js"></script>
+<script src="js/common.js"></script>
+<script src="js/gsproduct.js"></script>
+</body>
+</html>

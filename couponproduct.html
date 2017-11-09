@@ -4,18 +4,18 @@
   <meta name="viewport"
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta charset="UTF-8">
-  <title>baicaijia</title>
+  <title>couponproduct</title>
   <link rel="stylesheet" href="lib/fa/css/font-awesome.min.css">
   <link rel="stylesheet" href="css/base.css">
-  <link rel="stylesheet" href="css/baicaijia.css">
+  <link rel="stylesheet" href="css/couponproduct.css">
 </head>
 <body>
 <div class="container">
   <div class="header">
     <div class="back">
-      <a href="index.html" class="fa fa-angle-left"></a>
+      <a href="coupon.html" class="fa fa-angle-left"></a>
     </div>
-    <h1>白菜价-淘宝内部券</h1>
+    <h1>肯德基优惠券</h1>
     <div class="app">
       <a href="javascript:;" title="手机app下载">
         <img src="images/header_app.png" alt="手机app下载">
@@ -24,19 +24,10 @@
   </div>
 
   <div class="main">
-    <div class="nav">
-      <div class="nav_tiltle">
-        <ul class="clearfix">
-          <!--坑1-->
-        </ul>
-      </div>
-      <div class="nav_search">
-        <img src="images/search.svg" alt="">
-      </div>
-    </div>
-    <div class="list">
+    <div style="font-size:12px; text-align:center; color:#999; margin:8px 0px;">--点餐前出示手机中的优惠券，即可享受优惠--</div>
+    <div class="main_list">
       <ul class="clearfix">
-        <!--坑2-->
+      <!--tpl-->
       </ul>
     </div>
   </div>
@@ -62,46 +53,26 @@
 </div>
 <script type="text/html" id="tpl">
   {{each result v i}}
-
-  <li class="active" data-titleid ="{{v.titleId}}">
-    <a class="active"  href="javascript:;">{{v.title}}</a>
-  </li>
-  {{/each}}
-</script>
-<script type="text/html" id="tpl2">
-  {{each result v i}}
-  <li class="ui-border-tb ">
-    <a biz-itemid="538754112089" class="gobuy" isconvert="1" href="http://s.click.taobao.com/lkqGHQx"
-       target="_blank"></a>
-    <div class="pic"><i></i>
-      {{@v.productImg}}
-    </div>
-    <div class="inf">
-      <div class="i">
-        <div class="t">{{@v.productName}}</div>
-        <div class="pr">
-          {{@v.productPrice}}
-        </div>
+  <li>
+    <a href="http://d3.5ikfc.com/static/thumbs/1016/kfc-5ikfc-108_pc27.jpg"
+       title="两人小食组 新奥尔良烤翅2块+薯条(中)+黄金鸡块5块+劲爆鸡米花(小)2016年10月凭肯德基优惠券">
+      <div class="pic">
+        {{@v.couponProductImg}}
       </div>
-      <div class="o">
-        {{@v.productCouponRemain}}
-        <div class="b clearfix">
-          <div class="q">
-            {{@v.productCoupon}}
-          </div>
-          <div class="g">
-            {{@v.productHref}}
-          </div>
+      <div class="info">
+        <div class="tit">
+          <h3>{{v.couponProductName}}</h3>
+          <h2>{{v.couponProductPrice}}</h2>
         </div>
+        <div class="time">{{v.couponProductTime}}</div>
       </div>
-    </div>
+    </a>
   </li>
   {{/each}}
 </script>
 <script src="lib/artTemplate/template-web.js"></script>
 <script src="lib/jquery/jquery.min.js"></script>
-<script src="lib/iscroll/iscroll.js"></script>
 <script src="js/common.js"></script>
-<script src="js/baicaijia.js"></script>
+<script src="js/couponproduct.js"></script>
 </body>
 </html>

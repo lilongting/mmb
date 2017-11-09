@@ -4,7 +4,7 @@
   <meta name="viewport"
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta charset="UTF-8">
-  <title>productlist</title>
+  <title>bijia</title>
   <link rel="stylesheet" href="lib/fa/css/font-awesome.min.css">
   <link rel="stylesheet" href="css/base.css">
   <link rel="stylesheet" href="css/bijia.css">
@@ -27,13 +27,7 @@
   </div>
   <div id="mmb_bijia">
     <nav class="bijia_title">
-      <a href="index.html">首页</a>
-      &gt;
-      <a href="#">电视</a>
-      &gt;
-      <a href="#">乐视TV(Letv)S50</a>
-      &gt;
-      <a href="#" class="slect"> 筛选</a>
+      <!--nav坑-->
     </nav>
     <div class="xuanran">
       <!--<div class="bijia_product">-->
@@ -135,6 +129,21 @@
         </div>
       </li>
     </ul>
+    {{/each}}
+  </script>
+
+
+  <script type="text/html" id="nav">
+    {{each result v i }}
+    <a href="index.html">首页</a>
+    &gt;
+    <a href="productlist.html?categoryid={{v.categoryId}}&category={{v.category}}&pageid=1">{{v.category}}</a>
+    &gt;
+    <span id="sanji">
+        <a href="#">{{pro}}</a>
+    </span>
+    &gt;
+    <a href="#" class="slect"> 筛选</a>
     {{/each}}
   </script>
   <script src="lib/artTemplate/template-web.js"></script>
